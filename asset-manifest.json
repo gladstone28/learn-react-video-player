@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/learn-react-video-player/static/css/main.e6c13ad2.css",
+    "main.js": "/learn-react-video-player/static/js/main.51596dd3.js",
+    "index.html": "/learn-react-video-player/index.html",
+    "main.e6c13ad2.css.map": "/learn-react-video-player/static/css/main.e6c13ad2.css.map",
+    "main.51596dd3.js.map": "/learn-react-video-player/static/js/main.51596dd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.51596dd3.js"
+  ]
+}
