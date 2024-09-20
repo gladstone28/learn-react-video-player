@@ -6,9 +6,6 @@ function Menu({ onSelectVideo }) {
     onSelectVideo(name);
   };
 
-  const [src, setSrc] = useState("");
-
-
   const onSelectVideoHandler = (newVideo) => {
     setSrc(VIDEOS[newVideo]);
   };
