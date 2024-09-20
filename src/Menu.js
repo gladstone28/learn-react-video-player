@@ -1,16 +1,20 @@
+
 import React, { useState } from 'react';
 
-function Menu({ onSelectVideo }) {
-  const clickHandler = (event) => {
-    const name = event.target.value;
-    onSelectVideo(name);
-  };
+const VIDEOS = {
+  fast: 'path/to/fast.mp4',
+  slow: 'path/to/slow.mp4',
+  cute: 'path/to/cute.mp4',
+  eek: 'path/to/eek.mp4',
+};
 
+function Menu({ onSelectVideo }) {
   const [src, setSrc] = useState("");
 
-
-  const onSelectVideoHandler = (newVideo) => {
-    setSrc(VIDEOS[newVideo]);
+  const clickHandler = (event) => {
+    const name = event.target.value;
+    setSrc(VIDEOS[name]); // Set the source using the VIDEOS object
+    onSelectVideo(name);   // Call the parent handler
   };
 
   return (
@@ -24,3 +28,4 @@ function Menu({ onSelectVideo }) {
 }
 
 export default Menu;
+
